@@ -1,0 +1,7 @@
+:loop
+if($CameraObjectCount >0 AND $CameraTrackingType = " Object ")
+SayWait( " I see " + $CameraObjectName )
+ELSEif ( $CameraIsTracking >0 AND  $CameraTrackingType = " Face " )
+SayWait( " I See a face,  i don't recongnize. " )
+endif
+Goto(loop)
